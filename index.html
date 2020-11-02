@@ -25,7 +25,8 @@
 			  src="https://code.jquery.com/jquery-1.12.4.min.js"
 			  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 			  crossorigin="anonymous"></script> 
-    <script src="airtable.browser.js"></script> 
+    <script src="airtable.browser.js"></script>
+    <script src="main.js"></script>
 </body>
 
 <script>
@@ -41,7 +42,7 @@
                 {field: 'Name', direction: 'asc'}
             ]
         }).eachPage(function page(records, fetchNextPage) {
-            var $categoryAll = $('<label class="inside popup active-tab-label">').text("All");
+            var $categoryAll = $('<label class="inside popup active-tab-label" label-category="all">').text("All");
             $('#categories').append($categoryAll);
             records.forEach(function(record) {
                 console.log('Retrieved ', record.get('Name'));
