@@ -1368,11 +1368,11 @@ a,a:hover,a:focus{outline: 0 none;}.text-center{ text-align: center;}button,butt
 
 @font-face {
 font-family: 'bfa-icons';
-src:  url(cf-idc_files/bfa-icons.eot);
-src:  url(cf-idc_files/bfa-icons.eot) format('embedded-opentype'),
-url(cf-idc_files/bfa-icons.ttf) format('truetype'),
-url(cf-idc_files/bfa-icons.woff) format('woff'),
-url(cf-idc_files/bfa-icons.svg) format('svg');
+src:  url(bfa-icons.eot);
+src:  url(bfa-icons.eot) format('embedded-opentype'),
+url(bfa-icons.ttf) format('truetype'),
+url(bfa-icons.woff) format('woff'),
+url(bfa-icons.svg) format('svg');
 font-weight: normal;
 font-style: normal;
 font-display: block;
