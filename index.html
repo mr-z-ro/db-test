@@ -624,7 +624,9 @@
     
             fetchNextPage();
         }, function done(error) {
-            console.log(error);
+            if (error) {
+                console.log(error);
+            }
         });
     }
 
@@ -712,7 +714,9 @@
     
             fetchNextPage();
         }, function done(error) {
-            console.log(error);
+            if (error) {
+                console.log(error);
+            }
 
             var count = $('body').find('.companies-boxes section .inside:visible').length;
             $('#company-count').text(count);
