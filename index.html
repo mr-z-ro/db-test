@@ -614,7 +614,6 @@
             var $categoryAll = $('<label class="inside popup active-tab-label" label-category="all">').text("All");
             $('#categories').append($categoryAll);
             records.forEach(function(record) {
-                console.debug(record);
                 var $categoryLabel = $('<label class="inside popup">');
                 $categoryLabel.text(record.get('Name'));
                 $categoryLabel.attr('label-category', record.getId());
@@ -709,25 +708,6 @@
                 $companyPopupHolder.append($companyPopupFlex);
                 $companyPopup.append($companyPopupHolder);
                 $('#companies-popup-inside').append($companyPopup);
-
-                // <div class="company-container" data-company-id="220765" style="display: none;">
-                //     <div class="company-holder">
-                //         <div class="flex-container flex-wrap"> 
-                //             <section>
-                //                 <img src="{{LOGO}}" alt="{{COMPANY_NAME}}">
-                //             </section>
-                //             <section>
-                //                 <h2>{{COMPANY_NAME}}/h2>
-                //                 <div class="labels"><span>{{GEOGRAPHY}}</span><span class="labels-border"> | </span>
-                //                     <span>{{CATEGORY}}</span><span class="labels-border"> | </span><span>{{TAG}}</span>
-                //                 </div> 
-                //                 <a href="{{WEB_URL}}" target="_blank" title="{{COMPANY_NAME}}">{{WEB_URL}}</a>
-                //                 <p><span style="font-weight: 400;">{{DESC}}</p>
-                //                 <p><a target="_blank" class="action-button-cta cta " rel="noopener noreferrer" href="{{LINKEDIN_LINK}}">LINKEDIN</a></p>
-                //             </section>
-                //         </div>
-                //     </div>
-                // </div>
             });
     
             fetchNextPage();
